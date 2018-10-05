@@ -1,0 +1,6 @@
+#!/bin/bash
+
+docker-compose run\
+  -v $PWD/mix.exs:/app/mix.exs\
+  -v $PWD/mix.lock:/app/mix.lock\
+  app mix deps.get
